@@ -3,16 +3,13 @@
   "description": "Only For Legends..... By : @AnonymousD3061",
   "logo": "https://telegra.ph/file/83fad06b4595db7112d83.jpg",
   "keywords": [
-    "i",
-    "love",
-    "My",
     "telegram",
     "user",
     "bot"
   ],
   "repository": "https://gitlab.com/SpEcHiDe/UniBorg",
   "website": "https://telegram.dog/UniBorg",
-  "success_url": "https://telegram.dog/r4v4n4",
+  "success_url": "https://telegram.dog/AnonymousD3061",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable environment variables.",
@@ -73,7 +70,7 @@
     },
     "TELEGRAPH_SHORT_NAME": {
       "description": "This is required for the @telegraph functionality.",
-      "value": "AnonymousD3061",
+      "value": "xyz",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
@@ -195,6 +192,10 @@
     },
     "GIT_REPO_NAME": {
       "description": "This is required for commit functionality to work.",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "This is required to view dynos inside telegram app.",
       "required": false
     },
     "OPEN_LOAD_KEY": {
