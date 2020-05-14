@@ -30,39 +30,12 @@ import random, re
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
 #Add telegraph media links of profile pics that are to be used
-TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/8e9effb5ba79a94e44f18.jpg",
-                         "https://telegra.ph/file/3628db51a1c3e0876d302.jpg",
-                         "https://telegra.ph/file/199c2029f227eab9654f2.jpg",
-                         "https://telegra.ph/file/ccd1d7272082434cc643d.jpg",
-                         "https://telegra.ph/file/f6dbede265f6a6f909560.jpg",
-                         "https://telegra.ph/file/edd72efc60ce1cccdc203.jpg",
-                         "https://telegra.ph/file/d72cc07a0fa56d787fc5a.jpg",
-                         "https://telegra.ph/file/64d69c69f03372d18a5a9.jpg",
-                         "https://telegra.ph/file/1b2928c73612cf856c32b.jpg",
-                         "https://telegra.ph/file/e07a24aaa229b0c51471b.jpg",
-                         "https://telegra.ph/file/7bbb6813da08d5bccbb56.jpg",
-                         "https://telegra.ph/file/8e9effb5ba79a94e44f18.jpg",
-                         "https://telegra.ph/file/3628db51a1c3e0876d302.jpg",
-                         "https://telegra.ph/file/199c2029f227eab9654f2.jpg",
-                         "https://telegra.ph/file/ccd1d7272082434cc643d.jpg",
-                         "https://telegra.ph/file/f6dbede265f6a6f909560.jpg",
-                         "https://telegra.ph/file/edd72efc60ce1cccdc203.jpg",
-                         "https://telegra.ph/file/d72cc07a0fa56d787fc5a.jpg",
-                         "https://telegra.ph/file/64d69c69f03372d18a5a9.jpg",
-                         "https://telegra.ph/file/1b2928c73612cf856c32b.jpg",
-                         "https://telegra.ph/file/e07a24aaa229b0c51471b.jpg",
-                         "https://telegra.ph/file/7bbb6813da08d5bccbb56.jpg",
-                         "https://telegra.ph/file/8e9effb5ba79a94e44f18.jpg",
-                         "https://telegra.ph/file/3628db51a1c3e0876d302.jpg",
-                         "https://telegra.ph/file/199c2029f227eab9654f2.jpg",
-                         "https://telegra.ph/file/ccd1d7272082434cc643d.jpg",
-                         "https://telegra.ph/file/f6dbede265f6a6f909560.jpg",
-                         "https://telegra.ph/file/edd72efc60ce1cccdc203.jpg",
-                         "https://telegra.ph/file/d72cc07a0fa56d787fc5a.jpg",
-                         "https://telegra.ph/file/64d69c69f03372d18a5a9.jpg",
-                         "https://telegra.ph/file/1b2928c73612cf856c32b.jpg",
-                         "https://telegra.ph/file/e07a24aaa229b0c51471b.jpg",
-                         "https://telegra.ph/file/7bbb6813da08d5bccbb56.jpg"
+TELEGRAPH_MEDIA_LINKS = [
+                         "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
+                         "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
+                         "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
+                         "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
+                         "https://telegra.ph/file/e63c1b76ace21c2145858.jpg"
                         ]
 @borg.on(admin_cmd(pattern="cpp ?(.*)"))
 async def autopic(event):
@@ -79,7 +52,7 @@ async def autopic(event):
     
         shutil.copy(downloaded_file_name, photo)
         im = Image.open(photo)
-        current_time = datetime.now().strftime("\n \n \n \n \n \n \n Owner: @AnonymousD3061 \n \n \n \n \n \n \n \n \n                   Time: %H:%M:%S \n                   Date: %d/%m/%y ")
+        current_time = datetime.now().strftime("\n\n\n\n\nOwner: @AnonymousD3061\n\n\nTime: %H:%M:%S\n\n\nDate: %d/%m/%y ")
         img = Image.open(photo)
         drawn_text = ImageDraw.Draw(img)
         fnt = ImageFont.truetype(FONT_FILE_TO_USE, 23)
