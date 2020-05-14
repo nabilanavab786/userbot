@@ -30,8 +30,7 @@ import random, re
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
 #Add telegraph media links of profile pics that are to be used
-TELEGRAPH_MEDIA_LINKS = [
-                         "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
+TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
                          "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
                          "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
                          "https://telegra.ph/file/e63c1b76ace21c2145858.jpg",
